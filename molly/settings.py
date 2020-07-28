@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #'django_filter',
 ]
 
 MIDDLEWARE = [
@@ -76,7 +77,8 @@ WSGI_APPLICATION = 'molly.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    
+'default':     {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'molly',
         'USER': 'root',
@@ -86,7 +88,7 @@ DATABASES = {
         'OPTIONS':{
             'init_command': "SET sql_mode = 'STRICT_TRANS_TABLES'"   
          }
-    }
+   }
 }
 
 
