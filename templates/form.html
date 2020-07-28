@@ -60,10 +60,10 @@
                         <div class="row form-group">
                             <div class="col-md-12 mb-3 mb-md-0">
                                 <label class=" font-weight-bold" for="fullname">Job Title</label>
-                                <select class = "form-control" id ="job_title">
+                                <select class = "form-control"  name="job_title">
                                     <option value = "default">select job</option>
                                     {% for job in joblist %}
-                                        <option value = "{{ job.id }}">{{ job.job_title }}</option>   
+                                        <option value = "{{ job.job_title }}">{{ job.job_title }}</option>   
                                     {% endfor %}                         
                                 </select>
 
